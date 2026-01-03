@@ -1,4 +1,4 @@
-# 🤖 Groq Code Generator
+# 🤖 Code Generator
 
 AI-powered code generation web application using Streamlit and Groq LLMs.
 
