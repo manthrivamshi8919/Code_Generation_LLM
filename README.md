@@ -1,82 +1,64 @@
-🤖 Groq Code Generator
+# 🤖 Groq Code Generator
+
 AI-powered code generation web application using Streamlit and Groq LLMs.
 
-📋 Description
-Generate production-ready code from natural language descriptions. Select your programming language, describe what you need, and get instant, downloadable code.
+## 📋 Description
 
-✨ Features
+Generate production-ready code from natural language descriptions. Select your programming language, describe what you need, and get instant, downloadable, and syntax-highlighted code. This document contains everything you need to set up and run the application from scratch.
 
-Multi-language support (Python, JavaScript, Java, C++, Go, Rust, etc.)
-Secure API key input
-Clean, syntax-highlighted output
-Instant code download
-Fast generation with Groq LLMs
+## ✨ Features
 
+-   **Multi-language Support**: Generate code for Python, JavaScript, TypeScript, Java, C++, C#, Go, Rust, PHP, Ruby, Swift, Kotlin, HTML, CSS, SQL, Bash, and more.
+-   **Secure API Key Input**: Your Groq API key is input securely in the sidebar and is not stored.
+-   **Clean, Syntax-Highlighted Output**: The generated code is displayed with professional syntax highlighting for better readability.
+-   **Instant Code Download**: Download your generated code as a file with a single click.
+-   **Fast Generation**: Powered by the ultra-fast Groq LLMs for near-instant results.
+-   **End-to-End Documentation**: This single file contains all the code and instructions you need.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-Streamlit - Web interface
-Groq API - LLM for code generation
-Python 3.8+ - Backend language
-Pygments - Syntax highlighting
+-   **Streamlit**: For the fast and interactive web interface.
+-   **Groq API**: The large language model powering the code generation.
+-   **Python 3.8+**: The core backend language.
+-   **Pygments**: Used by Streamlit for syntax highlighting.
 
+---
 
-📦 Installation
-1. Clone Repository
-bashgit clone https://github.com/your-username/groq-code-generator.git
-cd groq-code-generator
-2. Create Virtual Environment
-bashpython -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. Install Dependencies
-bashpip install -r requirements.txt
+## 🚀 Quick Start (For Experienced Users)
 
-🚀 How to Run
-bashstreamlit run app.py
-Open your browser at http://localhost:8501
+1.  **Clone and Navigate**
+    ```bash
+    git clone https://github.com/your-username/groq-code-generator.git
+    cd groq-code-generator
+    ```
+2.  **Create and Activate Virtual Environment**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+3.  **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the App**
+    ```bash
+    streamlit run app.py
+    ```
+5.  Open your browser at `http://localhost:8501` and enter your Groq API key in the sidebar.
 
-📁 Project Structure
-groq-code-generator/
-├── app.py              # Main Streamlit application
-├── groq_client.py      # Groq API wrapper
-├── requirements.txt    # Dependencies
-└── README.md          # Documentation
+---
 
-📚 Dependencies
-txtstreamlit>=1.40.0
-numpy>=2.0.0
+## 📁 Project Files & Source Code
+
+To build this application, create a new project folder and add the following three files by copying the code provided below.
+
+### 1. `requirements.txt`
+
+This file lists all the Python libraries required for the project.
+
+**File Path:** `groq-code-generator/requirements.txt`
+
+```txt
+streamlit>=1.40.0
 groq>=1.0.0
 pygments==2.17.2
-
-🔑 Setup API Key
-
-Visit https://groq.com
-Create account and generate API key
-Enter key in the application sidebar
-
-
-💡 Usage Example
-Input:
-
-Language: Python
-Description: "Create a function to check if a number is prime"
-
-Output:
-
-Complete Python function with comments
-Download as .py file
-
-
-🎯 Supported Languages
-Python • JavaScript • TypeScript • Java • C++ • C# • Go • Rust • PHP • Ruby • Swift • Kotlin • HTML • CSS • SQL • Bash
-
-📄 License
-MIT License - Free for educational and commercial use
-
-🤝 Contributing
-Pull requests welcome! For major changes, please open an issue first.
-
-📧 Contact
-For questions or suggestions, open an issue on GitHub.
-
-Built with ❤️ using Streamlit and Groq
